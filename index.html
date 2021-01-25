@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programacion Web - Tercer Departamental</title>
+</head>
+  <!-- BOOSTRAP CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+<body>
+
+<h1>Farmacias Don Charlie</h1>
+<p>Ingrese el nombre del medicamento</p>
+<input type="text" id="pri" name="Nombre">
+<p>Ingrese la marca perteneciente del medicamento</p>
+<input type="text" id="seg" name="Marca">
+<p>Ingrese la cantidad perteneciente del medicamento</p>
+<input type="text" id="ter" name="Marca">
+<p><button onclick="guardarEnBD();">Agregar medicamento a la BD</button></p>
+
+
+<p><label>¿Qué medicamento deseas eliminar?</label></p>
+<input type="text" id="tercero" name="Carro">
+<p><button onclick="eliminar();">Eliminar medicamento de la BD</button><p>
+
+<p><label>¿Qué medicamento deseas editar?</label></p>
+<input type="text" id="cuarto" name="Carro">
+<p><button onclick="editar();">Editar medicamento de la BD</button></p>
+<footer>Copyright @CarlosFrancoFerrer</footer>
+</body>
+<script type="text/javascript" src="js.js"></script>
+</html>
+
